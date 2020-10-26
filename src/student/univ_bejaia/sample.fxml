@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="241.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.univ_bejaia.Controller">
+   <HBox alignment="CENTER" prefHeight="139.0" prefWidth="923.0" spacing="12.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+      <TextField fx:id="exchange_value" />
+      <ComboBox fx:id="combo1" prefHeight="26.0" prefWidth="89.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="USD" />
+               <String fx:value="DZD" />
+               <String fx:value="EUR" />
+               <String fx:value="GBP" />
+               <String fx:value="AUD" />
+               <String fx:value="CAD" />
+               <String fx:value="JPY" />
+               <String fx:value="CHF" />
+               <String fx:value="TWD" />
+               <String fx:value="JOD" />
+               <String fx:value="GEL" />
+               <String fx:value="EGP" />
+               <String fx:value="BSD" />
+               <String fx:value="GNF" />
+               <String fx:value="SLL" />
+               <String fx:value="SCR" />
+               <String fx:value="DKK" />
+               <String fx:value="AED" />
+               <String fx:value="CAD" />
+               <String fx:value="NGN" />
+               <String fx:value="AMD" />
+               <String fx:value="UYU" />
+               <String fx:value="GYD" />
+               <String fx:value="RWF" />
+               <String fx:value="MZN" />
+               <String fx:value="TZS" />
+               <String fx:value="CNY" />
+               <String fx:value="KWD" />
+               <String fx:value="HUF" />
+               <String fx:value="BYN" />
+               <String fx:value="BIF" />
+               <String fx:value="SEK" />
+
+            </FXCollections>
+         </items>
+         <value>
+            <String fx:value="USD" />
+         </value>
+      </ComboBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TO : " />
+      <TextField fx:id="after_value" editable="false" layoutX="384.0" layoutY="126.0" />
+      <ComboBox fx:id="combo2" layoutX="403.0" layoutY="126.0" prefHeight="26.0" prefWidth="89.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="USD" />
+               <String fx:value="DZD" />
+               <String fx:value="EUR" />
+               <String fx:value="GBP" />
+               <String fx:value="AUD" />
+               <String fx:value="CAD" />
+               <String fx:value="JPY" />
+               <String fx:value="CHF" />
+               <String fx:value="TWD" />
+               <String fx:value="JOD" />
+               <String fx:value="GEL" />
+               <String fx:value="EGP" />
+               <String fx:value="BSD" />
+               <String fx:value="GNF" />
+               <String fx:value="SLL" />
+               <String fx:value="SCR" />
+               <String fx:value="DKK" />
+               <String fx:value="AED" />
+               <String fx:value="CAD" />
+               <String fx:value="NGN" />
+               <String fx:value="AMD" />
+               <String fx:value="UYU" />
+               <String fx:value="GYD" />
+               <String fx:value="RWF" />
+               <String fx:value="MZN" />
+               <String fx:value="TZS" />
+               <String fx:value="CNY" />
+               <String fx:value="KWD" />
+               <String fx:value="HUF" />
+               <String fx:value="BYN" />
+               <String fx:value="BIF" />
+               <String fx:value="SEK" />
+            </FXCollections>
+         </items>
+         <value>
+            <String fx:value="EUR" />
+         </value>
+      </ComboBox>
+   </HBox>
+   <Label fx:id="date_label" alignment="CENTER" layoutX="63.0" layoutY="211.0" prefHeight="16.0" prefWidth="785.0" text="Update Dated : " AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0">
+      <font>
+         <Font name="Roboto" size="13.0" />
+      </font>
+   </Label>
+   <Button fx:id="convert_button" layoutX="366.0" layoutY="156.0" mnemonicParsing="false" onAction="#setConvert_button" text="convert" AnchorPane.leftAnchor="366.0" />
+   <Button layoutX="462.0" layoutY="156.0" mnemonicParsing="false" onAction="#setUpdate_button" text="update" AnchorPane.rightAnchor="397.0" />
+   <ProgressBar fx:id="pb" layoutX="351.0" layoutY="191.0" opacity="0.0" prefWidth="200.0" progress="0.18" AnchorPane.topAnchor="222.0" />
+</AnchorPane>
